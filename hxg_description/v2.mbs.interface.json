@@ -1,0 +1,457 @@
+{
+  "configById": {
+    "Indicator!122zerw": {
+      "path": "/order_status.data",
+      "style": "bulb",
+      "fallbackColor": "#9e2020",
+      "fallbackLabel": "No Requests",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "true",
+          "color": "#68e24a",
+          "label": "Order Recieved"
+        }
+      ]
+    },
+    "Publish!1kioa02": {
+      "topicName": "/order_request",
+      "datatype": "std_msgs/String",
+      "buttonText": "Order Water",
+      "buttonTooltip": "",
+      "buttonColor": "#00A871",
+      "advancedView": false,
+      "value": "{\n  \"data\": \"Water\"\n}",
+      "foxglovePanelTitle": "Button"
+    },
+    "Publish!217vuqd": {
+      "topicName": "/order_request",
+      "datatype": "std_msgs/String",
+      "buttonText": "Order Cola",
+      "buttonTooltip": "",
+      "buttonColor": "#ad191e",
+      "advancedView": false,
+      "value": "{\n  \"data\": \"Cola\"\n}",
+      "foxglovePanelTitle": "Button"
+    },
+    "Publish!2yoytap": {
+      "topicName": "/order_request",
+      "datatype": "std_msgs/String",
+      "buttonText": "Order Fanta",
+      "buttonTooltip": "",
+      "buttonColor": "#d35e2f",
+      "advancedView": false,
+      "value": "{\n  \"data\": \"Cola\"\n}",
+      "foxglovePanelTitle": "Button"
+    },
+    "3D!1cv1sln": {
+      "cameraState": {
+        "perspective": true,
+        "distance": 3.155584295763395,
+        "phi": 53.94821078503324,
+        "thetaOffset": -145.825174825175,
+        "targetOffset": [
+          -0.04577017812792599,
+          -0.23649136845059313,
+          -7.575396306316515e-18
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "followTf": "base_link",
+      "scene": {
+        "enableStats": false,
+        "ignoreColladaUpAxis": false,
+        "meshUpAxis": "z_up"
+      },
+      "transforms": {
+        "frame:base_link": {
+          "visible": false
+        },
+        "frame:base_footprint": {
+          "visible": false
+        },
+        "frame:front_bumper_link": {
+          "visible": false
+        },
+        "frame:front_left_wheel_link": {
+          "visible": false
+        },
+        "frame:front_right_wheel_link": {
+          "visible": false
+        },
+        "frame:inertial_link": {
+          "visible": false
+        },
+        "frame:imu_link": {
+          "visible": false
+        },
+        "frame:rear_left_wheel_link": {
+          "visible": false
+        },
+        "frame:rear_right_wheel_link": {
+          "visible": false
+        },
+        "frame:top_chassis_link": {
+          "visible": false
+        },
+        "frame:rear_bumper_link": {
+          "visible": false
+        },
+        "frame:user_rail_link": {
+          "visible": false
+        },
+        "frame:top_plate_link": {
+          "visible": false
+        },
+        "frame:top_plate_front_link": {
+          "visible": false
+        },
+        "frame:top_plate_rear_link": {
+          "visible": false
+        },
+        "frame:link_base": {
+          "visible": false
+        },
+        "frame:link1": {
+          "visible": false
+        },
+        "frame:link2": {
+          "visible": false
+        },
+        "frame:link3": {
+          "visible": false
+        },
+        "frame:link4": {
+          "visible": false
+        },
+        "frame:link5": {
+          "visible": false
+        },
+        "frame:link6": {
+          "visible": false
+        },
+        "frame:link_eef": {
+          "visible": false
+        },
+        "frame:xarm_connector_link": {
+          "visible": false
+        },
+        "frame:robotiq_arg2f_base_link": {
+          "visible": false
+        },
+        "frame:left_outer_knuckle": {
+          "visible": false
+        },
+        "frame:left_outer_finger": {
+          "visible": false
+        },
+        "frame:left_inner_finger": {
+          "visible": false
+        },
+        "frame:left_inner_finger_pad": {
+          "visible": false
+        },
+        "frame:left_inner_knuckle": {
+          "visible": false
+        },
+        "frame:right_outer_knuckle": {
+          "visible": false
+        },
+        "frame:right_outer_finger": {
+          "visible": false
+        },
+        "frame:right_inner_finger": {
+          "visible": false
+        },
+        "frame:right_inner_finger_pad": {
+          "visible": false
+        },
+        "frame:right_inner_knuckle": {
+          "visible": false
+        },
+        "frame:hxg_demo_frame": {
+          "visible": false
+        },
+        "frame:os_sensor_demo": {
+          "visible": false
+        }
+      },
+      "topics": {
+        "param:/robot_description": {
+          "visible": true
+        }
+      },
+      "layers": {
+        "2c8ee440-b767-4194-8b98-fe4409742af6": {
+          "visible": true,
+          "frameLocked": true,
+          "label": "URDF",
+          "instanceId": "2c8ee440-b767-4194-8b98-fe4409742af6",
+          "layerId": "foxglove.Urdf",
+          "url": "https://raw.githubusercontent.com/SOHAILMBS/mbs_public_urdf/main/hxg_description/urdf/hxg.urdf",
+          "order": 1
+        },
+        "0aaa2692-e3e8-462a-8af6-f9c8649a35bf": {
+          "visible": true,
+          "frameLocked": true,
+          "label": "Grid",
+          "instanceId": "0aaa2692-e3e8-462a-8af6-f9c8649a35bf",
+          "layerId": "foxglove.Grid",
+          "size": 10,
+          "divisions": 10,
+          "lineWidth": 1,
+          "color": "#5e7a27",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "order": 2
+        }
+      },
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {}
+    },
+    "ImageViewPanel!326xbty": {
+      "cameraTopic": "/camera/depth/image_raw",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": 2,
+        "y": -2
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": false,
+      "zoom": 1
+    },
+    "3D!i6m4nx": {
+      "cameraState": {
+        "distance": 9.265824603194972,
+        "perspective": true,
+        "phi": 59.99999999999988,
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOffset": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "thetaOffset": 45.000000000000036,
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {},
+      "transforms": {
+        "frame:base_link": {
+          "visible": false
+        },
+        "frame:base_footprint": {
+          "visible": false
+        },
+        "frame:inertial_link": {
+          "visible": false
+        },
+        "frame:imu_link": {
+          "visible": false
+        },
+        "frame:front_left_wheel_link": {
+          "visible": false
+        },
+        "frame:front_right_wheel_link": {
+          "visible": false
+        },
+        "frame:rear_left_wheel_link": {
+          "visible": false
+        },
+        "frame:rear_right_wheel_link": {
+          "visible": false
+        },
+        "frame:top_chassis_link": {
+          "visible": false
+        },
+        "frame:front_bumper_link": {
+          "visible": false
+        },
+        "frame:rear_bumper_link": {
+          "visible": false
+        },
+        "frame:user_rail_link": {
+          "visible": false
+        },
+        "frame:top_plate_link": {
+          "visible": false
+        },
+        "frame:top_plate_front_link": {
+          "visible": false
+        },
+        "frame:top_plate_rear_link": {
+          "visible": false
+        },
+        "frame:link_base": {
+          "visible": false
+        },
+        "frame:link1": {
+          "visible": false
+        },
+        "frame:link2": {
+          "visible": false
+        },
+        "frame:link3": {
+          "visible": false
+        },
+        "frame:link4": {
+          "visible": false
+        },
+        "frame:link5": {
+          "visible": false
+        },
+        "frame:link6": {
+          "visible": false
+        },
+        "frame:link_eef": {
+          "visible": false
+        },
+        "frame:xarm_connector_link": {
+          "visible": false
+        },
+        "frame:robotiq_arg2f_base_link": {
+          "visible": false
+        },
+        "frame:left_outer_knuckle": {
+          "visible": false
+        },
+        "frame:left_outer_finger": {
+          "visible": false
+        },
+        "frame:left_inner_finger": {
+          "visible": false
+        },
+        "frame:left_inner_finger_pad": {
+          "visible": false
+        },
+        "frame:left_inner_knuckle": {
+          "visible": false
+        },
+        "frame:right_outer_knuckle": {
+          "visible": false
+        },
+        "frame:right_outer_finger": {
+          "visible": false
+        },
+        "frame:right_inner_finger": {
+          "visible": false
+        },
+        "frame:right_inner_finger_pad": {
+          "visible": false
+        },
+        "frame:right_inner_knuckle": {
+          "visible": false
+        },
+        "frame:hxg_demo_frame": {
+          "visible": false
+        },
+        "frame:os_sensor_demo": {
+          "visible": false
+        }
+      },
+      "topics": {
+        "/move_group/display_contacts": {
+          "visible": false
+        },
+        "/move_group/display_grasp_markers": {
+          "visible": false
+        }
+      },
+      "layers": {},
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {}
+    }
+  },
+  "globalVariables": {
+    "globalVariable": 1
+  },
+  "userNodes": {
+    "bf74da84-0e70-4408-b42b-3d0163c9bb7c": {
+      "sourceCode": "// This example shows how to publish a Marker message from a User Script.\n//\n// Publishing Marker messages with a User Script is a good way to visualize non-visual\n// data.\n//\n// For example, if your robot calculates some projected paths and publishes them between two\n// subsystems as a message, you can make a node that visualizes the path as a line list marker and view it in the 3D\n// panel.\n\nimport { Input, Message } from \"./types\";\n\n// The `./markers` utility provides a helper function to build a Marker.\nimport { buildRosMarker, MarkerTypes } from \"./markers\";\n\ntype GlobalVariables = { id: number };\n\nexport const inputs = [\"/input/topic\"];\nexport const output = \"/studio_script/my_custom_topic\";\n\n// Our node will output a Marker message.\ntype Marker = Message<\"visualization_msgs/Marker\">;\n\n// If you want to output multiple markers for a single input message, use a MarkerArray.\n// The marker array message has one field, `markers`, which is an array of Marker messaages.\n// type MarkerArray = Message<\"visualization_msgs/MarkerArray\">;\n\nexport default function script(event: Input<\"/input/topic\">, globalVars: GlobalVariables): Marker {\n  return buildRosMarker({\n      // Add any fields you want to set in the marker here\n      // Any fields you omit will use default values\n      // e.g 'type: MarkerTypes.ARROW' */\n  });\n};\n",
+      "name": "bf74da84"
+    }
+  },
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "first": "Indicator!122zerw",
+    "second": {
+      "direction": "row",
+      "first": {
+        "first": {
+          "first": "Publish!1kioa02",
+          "second": "Publish!217vuqd",
+          "direction": "column"
+        },
+        "second": "Publish!2yoytap",
+        "direction": "column",
+        "splitPercentage": 33.62376362376362
+      },
+      "second": {
+        "first": "3D!1cv1sln",
+        "second": {
+          "first": "3D!i6m4nx",
+          "second": "ImageViewPanel!326xbty",
+          "direction": "column"
+        },
+        "direction": "row"
+      },
+      "splitPercentage": 23.756178612855695
+    },
+    "direction": "column",
+    "splitPercentage": 9.355509355509357
+  }
+}
