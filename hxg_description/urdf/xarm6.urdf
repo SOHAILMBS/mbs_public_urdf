@@ -689,44 +689,6 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <child link="robotiq_arg2f_base_link"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
-  <!-- Sensor Frame to base -->
-  <link name="hxg_demo_frame">
-    <visual>
-      <geometry>
-        <mesh filename="../meshes/hxg_demo_frame.dae" scale="0.01 0.01 0.01"/>
-      </geometry>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="../meshes/hxg_demo_frame.stl" scale="0.01 0.01 0.01"/>
-      </geometry>
-    </collision>
-  </link>
-  <joint name="demo_hxg_frame_base_joint" type="fixed">
-    <parent link="base_link"/>
-    <child link="hxg_demo_frame"/>
-    <origin rpy="0 0 1.57" xyz="-0.25 0 0.25"/>
-  </joint>
-  <link name="os_sensor_demo">
-    <visual>
-      <geometry>
-        <mesh filename="../meshes/os1_64.dae"/>
-      </geometry>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="../meshes/os1_64.stl"/>
-      </geometry>
-    </collision>
-  </link>
-  <joint name="demo_ouster_joint" type="fixed">
-    <parent link="hxg_demo_frame"/>
-    <child link="os_sensor_demo"/>
-    <origin rpy="0 0 0" xyz="0 0 0.87"/>
-  </joint>
-  <!-- This file is a placeholder which is included by default from
-       husky.urdf.xacro. If a robot is being customized and requires
-       additional URDF, set the HUSKY_URDF_EXTRAS environment variable
-       to the full path of the file you would like included. -->
+
 </robot>
 
