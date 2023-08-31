@@ -355,25 +355,6 @@
     <material>Gazebo/Yellow</material>
     <turnGravityOff>false</turnGravityOff>
   </gazebo>
-  <!--
-    As you add to this URDF, please be aware that both the robot and
-    simulation include it. You must retain compatibility with all of
-    the following launch files:
-
-    jackal_viz/launch/view_model.launch
-    jackal_gazebo/launch/jackal_world.launch
-    jackal_base/launch/base.launch
-  -->
-  <!-- 
-    Add Cameras. 
-    - JACKAL_FLEA3
-    - JACKAL_STEREO_FLEA3
-    - JACKAL_BB2
-  -->
-  <!-- Optional custom includes. -->
-  <!-- <xacro:include filename="$(optenv JACKAL_URDF_EXTRAS empty.urdf)" /> -->
-  <!-- Optional for Clearpath internal softwares -->
-  <!-- <xacro:include filename="$(optenv CPR_URDF_EXTRAS empty.urdf)" /> -->
   <!-- Ouster Augment -->
   <link name="front_laser">
     <inertial>
