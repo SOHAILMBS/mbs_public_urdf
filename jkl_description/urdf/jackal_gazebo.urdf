@@ -51,17 +51,7 @@
     <origin rpy="0 0 0" xyz="0.131 0.187795 0.0345"/>
     <axis xyz="0 1 0"/>
   </joint>
-  <!-- In reality, Jackal has only two motors, one per side. However, it's more
-         straightforward for Gazebo to simulate as if there's an actuator per wheel. -->
-  <transmission name="front_left_wheel_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="front_left_wheel">
-      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="front_left_actuator">
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
+
   <link name="front_right_wheel_link">
     <visual>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
@@ -97,17 +87,7 @@
     <origin rpy="0 0 0" xyz="0.131 -0.187795 0.0345"/>
     <axis xyz="0 1 0"/>
   </joint>
-  <!-- In reality, Jackal has only two motors, one per side. However, it's more
-         straightforward for Gazebo to simulate as if there's an actuator per wheel. -->
-  <transmission name="front_right_wheel_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="front_right_wheel">
-      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="front_right_actuator">
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
+
   <link name="rear_left_wheel_link">
     <visual>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
@@ -143,17 +123,7 @@
     <origin rpy="0 0 0" xyz="-0.131 0.187795 0.0345"/>
     <axis xyz="0 1 0"/>
   </joint>
-  <!-- In reality, Jackal has only two motors, one per side. However, it's more
-         straightforward for Gazebo to simulate as if there's an actuator per wheel. -->
-  <transmission name="rear_left_wheel_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="rear_left_wheel">
-      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="rear_left_actuator">
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
+
   <link name="rear_right_wheel_link">
     <visual>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
@@ -189,17 +159,7 @@
     <origin rpy="0 0 0" xyz="-0.131 -0.187795 0.0345"/>
     <axis xyz="0 1 0"/>
   </joint>
-  <!-- In reality, Jackal has only two motors, one per side. However, it's more
-         straightforward for Gazebo to simulate as if there's an actuator per wheel. -->
-  <transmission name="rear_right_wheel_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="rear_right_wheel">
-      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="rear_right_actuator">
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
+
   <link name="base_link"/>
   <joint name="base_link_joint" type="fixed">
     <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -299,62 +259,7 @@
     <child link="front_mount"/>
     <origin xyz="0.12 0 0"/>
   </joint>
-  <gazebo>
-    <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
-      <robotNamespace>/</robotNamespace>
-    </plugin>
-  </gazebo>
-  <gazebo>
-    <plugin filename="libhector_gazebo_ros_imu.so" name="imu_controller">
-      <robotNamespace>/</robotNamespace>
-      <updateRate>50.0</updateRate>
-      <bodyName>imu_link</bodyName>
-      <topicName>imu/data</topicName>
-      <accelDrift>0.005 0.005 0.005</accelDrift>
-      <accelGaussianNoise>0.005 0.005 0.005</accelGaussianNoise>
-      <rateDrift>0.005 0.005 0.005 </rateDrift>
-      <rateGaussianNoise>0.005 0.005 0.005 </rateGaussianNoise>
-      <headingDrift>0.005</headingDrift>
-      <headingGaussianNoise>0.005</headingGaussianNoise>
-    </plugin>
-  </gazebo>
-  <gazebo>
-    <plugin filename="libhector_gazebo_ros_gps.so" name="gps_controller">
-      <updateRate>40</updateRate>
-      <robotNamespace>/</robotNamespace>
-      <bodyName>navsat_link</bodyName>
-      <frameId>base_link</frameId>
-      <topicName>/navsat/fix</topicName>
-      <velocityTopicName>/navsat/vel</velocityTopicName>
-      <referenceLatitude>49.9</referenceLatitude>
-      <referenceLongitude>8.9</referenceLongitude>
-      <referenceHeading>90</referenceHeading>
-      <referenceAltitude>0</referenceAltitude>
-      <drift>0.0001 0.0001 0.0001</drift>
-    </plugin>
-  </gazebo>
-  <gazebo reference="base_link">
-    <turnGravityOff>false</turnGravityOff>
-  </gazebo>
-  <gazebo reference="chassis_link">
-    <material>Gazebo/DarkGrey</material>
-    <turnGravityOff>false</turnGravityOff>
-  </gazebo>
-  <gazebo reference="imu_link">
-    <turnGravityOff>false</turnGravityOff>
-  </gazebo>
-  <gazebo reference="navsat_link">
-    <material>Gazebo/DarkGrey</material>
-    <turnGravityOff>false</turnGravityOff>
-  </gazebo>
-  <gazebo reference="front_fender_link">
-    <material>Gazebo/Yellow</material>
-    <turnGravityOff>false</turnGravityOff>
-  </gazebo>
-  <gazebo reference="rear_fender_link">
-    <material>Gazebo/Yellow</material>
-    <turnGravityOff>false</turnGravityOff>
-  </gazebo>
+
   <!-- Ouster Augment -->
   <link name="front_laser">
     <inertial>
@@ -382,42 +287,6 @@
     <origin rpy="0 0 0" xyz="0.18 0.0 0.213"/>
     <!-- 0.03618 is the default height -->
   </joint>
-  <!-- Ouster gazebo library -->
-  <gazebo reference="front_laser">
-    <sensor name="front_laser_prim" type="ray">
-      <pose>0 0 0 0 0 0</pose>
-      <visualize>false</visualize>
-      <update_rate>10</update_rate>
-      <ray>
-        <scan>
-          <horizontal>
-            <samples>220</samples>
-            <!-- 512 default-->
-            <resolution>1</resolution>
-            <min_angle>-3.1415926535897931</min_angle>
-            <max_angle>3.1415926535897931</max_angle>
-          </horizontal>
-          <vertical>
-            <samples>64</samples>
-            <resolution>1</resolution>
-            <min_angle>-0.26</min_angle>
-            <max_angle>0.26</max_angle>
-          </vertical>
-        </scan>
-        <range>
-          <min>0.2</min>
-          <max>75.0</max>
-          <resolution>0.03</resolution>
-        </range>
-      </ray>
-      <plugin filename="libgazebo_ros_ouster_laser.so" name="gazebo_ros_laser_controller">
-        <topicName>/points</topicName>
-        <frameName>front_laser</frameName>
-        <min_range>0.2</min_range>
-        <max_range>75.0</max_range>
-        <gaussianNoise>0.008</gaussianNoise>
-      </plugin>
-    </sensor>
-  </gazebo>
+ 
 </robot>
 
