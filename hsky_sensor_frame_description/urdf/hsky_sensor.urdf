@@ -54,7 +54,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://husky_description/meshes/base_link.dae"/>
+        <mesh filename="../meshes/base_link.dae"/>
       </geometry>
     </visual>
     <collision>
@@ -109,7 +109,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://husky_description/meshes/wheel.dae"/>
+        <mesh filename="../meshes/wheel.dae"/>
       </geometry>
     </visual>
     <collision>
@@ -150,7 +150,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://husky_description/meshes/wheel.dae"/>
+        <mesh filename="../meshes/wheel.dae"/>
       </geometry>
     </visual>
     <collision>
@@ -191,7 +191,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://husky_description/meshes/wheel.dae"/>
+        <mesh filename="../meshes/wheel.dae"/>
       </geometry>
     </visual>
     <collision>
@@ -232,7 +232,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://husky_description/meshes/wheel.dae"/>
+        <mesh filename="../meshes/wheel.dae"/>
       </geometry>
     </visual>
     <collision>
@@ -273,7 +273,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://husky_description/meshes/top_chassis.dae"/>
+        <mesh filename="../meshes/top_chassis.dae"/>
       </geometry>
     </visual>
   </link>
@@ -285,7 +285,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <link name="front_bumper_link">
     <visual>
       <geometry>
-        <mesh filename="package://husky_description/meshes/bumper.dae"/>
+        <mesh filename="../meshes/bumper.dae"/>
       </geometry>
     </visual>
   </link>
@@ -298,7 +298,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <link name="rear_bumper_link">
     <visual>
       <geometry>
-        <mesh filename="package://husky_description/meshes/bumper.dae"/>
+        <mesh filename="../meshes/bumper.dae"/>
       </geometry>
     </visual>
   </link>
@@ -312,7 +312,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <link name="user_rail_link">
     <visual>
       <geometry>
-        <mesh filename="package://husky_description/meshes/user_rail.dae"/>
+        <mesh filename="../meshes/user_rail.dae"/>
       </geometry>
     </visual>
   </link>
@@ -327,13 +327,13 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://husky_description/meshes/top_plate.dae"/>
+        <mesh filename="../meshes/top_plate.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://husky_description/meshes/top_plate.stl"/>
+        <mesh filename="../meshes/top_plate.stl"/>
       </geometry>
     </collision>
   </link>
@@ -400,12 +400,12 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <link name="sensor_frame">
     <visual>
       <geometry>
-        <mesh filename="package://hsky_description/meshes/sensor_frame.dae" scale="0.01 0.01 0.01"/>
+        <mesh filename="../meshes/sensor_frame.dae" scale="0.01 0.01 0.01"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://hsky_description/meshes/sensor_frame.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="../meshes/sensor_frame.stl" scale="0.01 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -417,12 +417,12 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <link name="os_sensor">
     <visual>
       <geometry>
-        <mesh filename="package://hsky_description/meshes/os1_64.dae"/>
+        <mesh filename="../meshes/os1_64.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://hsky_description/meshes/os1_64.stl"/>
+        <mesh filename="../meshes/os1_64.stl"/>
       </geometry>
     </collision>
   </link>
@@ -435,13 +435,13 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <link name="front_mount">
     <visual>
       <geometry>
-        <mesh filename="package://hsky_description/meshes/front_laser_mount.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/front_laser_mount.dae" scale="0.001 0.001 0.001"/>
         <material name="Black"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://hsky_description/meshes/front_laser_mount.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/front_laser_mount.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -454,13 +454,13 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <link name="front_laser">
     <visual>
       <geometry>
-        <mesh filename="package://hsky_description/meshes/ust-10lx.dae" scale="1 1 1"/>
+        <mesh filename="../meshes/ust-10lx.dae" scale="1 1 1"/>
         <material name="Black"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://hsky_description/meshes/ust-10lx.stl" scale="1 1 1"/>
+        <mesh filename="../meshes/ust-10lx.stl" scale="1 1 1"/>
       </geometry>
     </collision>
   </link>
@@ -473,13 +473,13 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <link name="rear_mount">
     <visual>
       <geometry>
-        <mesh filename="package://hsky_description/meshes/front_laser_mount.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/front_laser_mount.dae" scale="0.001 0.001 0.001"/>
         <material name="Black"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://hsky_description/meshes/front_laser_mount.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/front_laser_mount.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -492,13 +492,13 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <link name="rear_laser">
     <visual>
       <geometry>
-        <mesh filename="package://hsky_description/meshes/ust-10lx.dae" scale="1 1 1"/>
+        <mesh filename="../meshes/ust-10lx.dae" scale="1 1 1"/>
         <material name="Black"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://hsky_description/meshes/ust-10lx.stl" scale="1 1 1"/>
+        <mesh filename="../meshes/ust-10lx.stl" scale="1 1 1"/>
       </geometry>
     </collision>
   </link>
