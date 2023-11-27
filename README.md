@@ -11,3 +11,8 @@ A shared package for visualization online of different open-source URDFS. All ri
 - Take the raw github path when using e.g.
     - Husky (https://raw.githubusercontent.com/SOHAILMBS/mbs_public_urdf/main/hsky_sensor_frame_description/urdf/hsky_sensor.urdf)
     - Jackal (https://raw.githubusercontent.com/SOHAILMBS/mbs_public_urdf/main/jkl_description/urdf/jackal_gazebo.urdf)
+
+## Credits
+
+Author: Salman Omar Sohail
+Email:  support@mybotshop.de
